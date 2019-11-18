@@ -1,0 +1,44 @@
+body {
+ background: #e6ecf0;
+ padding: 0px;
+ margin: 0px;
+ position: relative;
+font-family: Helvetica;
+}
+.background_image {
+    width: 100%;
+    height: 320px;
+    background-color: #9e9e9e;
+    background-image: url("../images/sutt.jpg");
+    background-size: cover;
+    background-position: 0px -90px;
+
+}
+.nav_container {
+ width: 100%;
+ height: 60px;
+ padding-left: 300px;
+ box-sizing: border-box;
+ display: flex;
+ background-color: #fff;
+ flex-direction: row;
+ box-shadow: 0 1px 3px 0  rgba(0, 0, 0.25);
+}
+.nav_link_container {
+    padding: 9px;
+    margin-right: 12px;
+}
+.nav_link {
+    width: 120px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    background-color: #e2e9ed;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #66757f;
+}
