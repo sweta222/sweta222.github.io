@@ -98,3 +98,50 @@ font-family: Helvetica;
     font-weight: lighter;
     letter-spacing: 0.1px;
 }
+.nav_container_about {
+    padding-left: 40px;
+  }
+  #avatar_container_about {
+    width: 40px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  #avatar_about {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .about_body{
+    display: flex;
+    justify-content: center;
+  }
+  .about_pane{
+    width: 80vw;
+    height: 45vw;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px 48px;
+    box-sizing: border-box;
+  }
+  .about_label_text{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  .about_label_content{
+    font-size: 16px;
+    color: #757575;
+    line-height: 150%;
+  }
+  
+  #game {
+    border: 5px solid orange;
+    background-color: darkslategray;
+    margin: 50px;
+    border-radius: 15px;
+  }
