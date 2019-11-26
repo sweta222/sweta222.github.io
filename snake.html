@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
 </head>
 <body>
-  <h1>snake</h1>  
+  <div class="nav_container nav_container_about">
+    <div id="avatar_container_about">
+      <img
+        id="avatar_about"
+        src="./images/sutt.jpg"
+        alt="sweta"
+        obj
+      />
+    </div>
+    <div class="nav_link_container">
+      <a class="nav_link" href="./index.html">Home</a>
+    </div>
+    <div class="nav_link_container">
+      <a class="nav_link" href="./about.html">About</a>
+    </div>
+    <div class="nav_link_container">
+      <a class="nav_link nav_link_selected" href="./snake.html">Play Snake</a>
+    </div>
+  </div>
+  <div class="about_body">
+    <div class="about_pane">
+      <canvas id="game" width="800" height="400"></canvas>
+    </div>
+  </div>
+  <script src="./js/snake.js"></script>
 </body>
 </html>
