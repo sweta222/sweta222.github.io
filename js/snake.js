@@ -2,6 +2,7 @@ var canvas = document.getElementById("game");
 var context = canvas.getContext("2d");
 var grid = 16;
 var count = 0;
+var score=0;
 
 var snake = {
   x: 160,
@@ -52,7 +53,7 @@ function loop() {
     snake.cells.pop();
   }
 
-  context.fillStyle = "red";
+  context.fillStyle = "white";
   context.fillRect(apple.x, apple.y, grid - 1, grid - 1);
 
   context.fillStyle = "yellow";
@@ -61,6 +62,7 @@ function loop() {
 
     if (cell.x === apple.x && cell.y === apple.y) {
       snake.maxCells++;
+      score++;
 
       apple.x = getRandomInt(0, 25) * grid;
       apple.y = getRandomInt(0, 25) * grid;
@@ -80,6 +82,14 @@ function loop() {
       }
     }
   });
+  function drawscore() {
+    context.font = "20px Arial";
+    context.fillStyle = "white";
+    context.fillText("score: "+score, 5, 20);
+  }
+
+  drawscore();
+
 }
 
 document.addEventListener("keydown", function(e) {
